@@ -1,0 +1,124 @@
+body {
+  margin-top: 50px;
+  background: #eee;
+}
+
+@media (max-width:499px){
+  body {
+    margin-top: 0px;
+  }
+}
+
+.product {
+  border: 1px thick black;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  background: #fff;
+  box-shadow: 0 1px 1px grey;
+  width: 50%;
+  border-top: 2px solid #CCC;
+    border-bottom: 2px solid #CCC;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.row {
+  display: block! important
+}
+
+.product .product-detail {
+  border-bottom: 1px solid #dfe5e9;
+  position: relative;
+  background: #fff
+}
+
+.product-detail .price-container {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.product-name {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  border-bottom: 1px solid #dfe5e9;
+  padding-bottom: 10px;
+  margin-top: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.filterableselectbox {
+  margin: 10px;
+  background: #fff;
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+}
+
+.filterableselectbox input {
+  width: 100%;
+  height: 40px;
+}
+
+.filterableselectbox-list {
+  z-index: 10;
+  position: absolute;
+  width: 50%;
+  border: 1px solid #dfdfdf;
+  border-top: none;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: #fff;
+          box-shadow: 0 2px 5px -1px #e8e8e8;
+  font-weight: 500;
+  max-height: 215px;
+  overflow-y: scroll;
+  padding-left: 0px;
+}
+.filterableselectbox-list-item {
+  width: 100%;
+  line-height: 1.6rem;
+  cursor: default;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.filterableselectbox-list-item.selected {
+  color: #fff;
+  background-color: #ffcc01;
+}
+.filterableselectbox-list-item:hover {
+  color: #fff;
+  background-color: #ffcc01;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.alert {
+  width: 50%;
+}

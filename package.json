@@ -1,0 +1,26 @@
+{
+  "name": "exchangeexpressapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server/server.js",
+    "client": "npm run start --prefix client",
+    "test": "export NODE_ENV=test || SET NODE_ENV=test && mocha server/**/*.test.js",
+    "start": "concurrently \"npm run server\"  \"npm run client\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "expect": "^23.6.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  }
+}
